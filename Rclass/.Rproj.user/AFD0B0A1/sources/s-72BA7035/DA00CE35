@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1633051781378.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2805992381",
+    "id" : "DA00CE35",
+    "lastKnownWriteTime" : 1633063397,
+    "last_content_update" : 1633063397443,
+    "path" : "~/Rclass/script1.R",
+    "project_path" : "script1.R",
+    "properties" : {
+        "cursorPosition" : "175,10",
+        "scrollLine" : "157",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
