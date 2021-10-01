@@ -171,9 +171,83 @@ str(exam)
 5.변수들의 값을 요약 summary()
 summary(exam)  # 요약 통계량
 
+
 6. 뷰어창에서 데이터 확인View (V가 대문자) 
 
 View(exam)
+
+
+
+
+
+library(ggplot2)
+
+mpg <- as.data.frame(ggplot2::mpg)
+
+
+# 데이터에 관한 설명보기 
+?mpg
+
+
+
+
+df_raw <- data.frame(var1 = c(1,2,1),
+                     var2 = c(2,3,2))
+
+
+install.packages("dplyr")  # 데이터 가공에 사용되는 패키지 
+library(dplyr)
+
+
+df_new <- df_raw
+
+
+# 변수명 바꾸기..
+
+df_new
+
+df_new <- rename(df_new, v2 = var2)
+
+df_new
+
+
+head(mpg)
+
+#mpg 셋을 mpg_new 복사본을 만들어  cty ->city  hwy -> highway
+
+
+mpg_new <- mpg
+
+mpg_new <- rename(mpg_new, city = cty, highway = hwy)
+head(mpg_new)
+
+
+# 파생변수 만들기 
+
+df <- df_raw
+
+df
+
+df$sum <- df$var1 + df$var2
+df
+
+
+
+Quiz. mpg_new에 city 도시연비 highway 고속연비
+의 평균을 계산하여 total 이라는 종합연비를 추가하세요.
+
+종합연비 전체의 평균...
+
+
+
+
+mpg_new$total <- (mpg_new$city+mpg_new$highway)/2
+head(mpg_new)
+
+mean(mpg_new$total)
+
+
+
 
 
 
