@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1633071787279.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "249761596",
+    "id" : "D17D243B",
+    "lastKnownWriteTime" : 1633078066,
+    "last_content_update" : 1633078066332,
+    "path" : "~/BigDataClass/Rclass/cafe.R",
+    "project_path" : "cafe.R",
+    "properties" : {
+        "cursorPosition" : "159,0",
+        "scrollLine" : "152",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

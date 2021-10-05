@@ -247,6 +247,77 @@ head(mpg_new)
 mean(mpg_new$total)
 
 
+# 조건문을 활용해서 파생변수 만들자
+
+summary(mpg_new$total)
+
+hist(mpg_new$total)
+
+
+
+
+mpg_new$test <- ifelse(mpg_new$total >= 20,"pass", "fail")
+
+head(mpg_new,20)
+
+table(mpg_new$test)
+
+install.packages("ggplot2")
+library(ggplot2)
+
+
+qplot(mpg_new$test)
+
+#Quiz  total 값이 30 이상이면 A   20이상이면 B       20미만은 C
+     grade 필드명으로 조건에 따라 등급부여
+
+
+     mpg_new$grade <- ifelse(mpg_new$total >= 30,"A", ifelse(mpg_new$total >= 20,"B", "C"))
+head(mpg_new)
+
+table(mpg_new$grade)
+
+
+
+
+종합Quiz
+1. ggplot2 의 midwest를 데이터프레임으로 가져와서 데이터의 특성을 파악하자 6개
+
+mid <- as.data.frame(ggplot2::midwest)
+head(mid)
+tail(mid)
+View(mid)
+dim(mid)
+str(mid)
+summary(mid)
+
+
+2. poptotal 변수명을 total로 변경  popasian 를 asian으로 수정
+
+mid <- rename(mid, total = poptotal)
+mid <- rename(mid, asian = popasian)
+
+3. total과 asian변수로 전체 인구 대비 아시아 인구 백분율 을 파생변수로 만들어서
+히스토 그램 그리기
+
+mid$popr <- mid$asian/mid$total*100
+hist(mid$popr)
+
+4. 아시아 인구 백분율 의 평균을 구하고 그평균을 초과하면 large 아니면 small 파생변수 생성
+mean(mid$popr)
+
+mid$group <- ifelse(mid$popr >0.4872462,"large", "small")
+
+qplot(mid$group)
+
+table(mid$group)
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1633072425692.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "AC948D31",
+    "lastKnownWriteTime" : 2462077887664,
+    "last_content_update" : 1633072425692,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "F2ABF0AE",
+        "caption" : "sales",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=sales&cache_key=F2ABF0AE",
+        "displayedObservations" : 62581,
+        "environment" : "",
+        "object" : "sales",
+        "preview" : 0,
+        "totalObservations" : 62581,
+        "variables" : 5
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
